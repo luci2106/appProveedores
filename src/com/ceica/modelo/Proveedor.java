@@ -6,9 +6,18 @@ public class Proveedor {
 
     private String cif;
     private String nombre;
-    private String dirección;
+    private String direccion;
     private String localidad;
     private String provincia;
+
+    public Proveedor(int id) {
+        this.id = id;
+    }
+
+    public Proveedor() {
+
+
+    }
 
     public Proveedor(java.lang.String cif, java.lang.String nombre) {
         this.cif = cif;
@@ -40,11 +49,11 @@ public class Proveedor {
     }
 
     public java.lang.String getDirección() {
-        return dirección;
+        return direccion;
     }
 
-    public void setDirección(java.lang.String dirección) {
-        this.dirección = dirección;
+    public void setDireccion(java.lang.String direccion) {
+        this.direccion = direccion;
     }
 
     public java.lang.String getLocalidad() {
@@ -63,9 +72,7 @@ public class Proveedor {
         this.provincia = provincia;
     }
 
-    public Proveedor() {
 
-    }
 
     @java.lang.Override
     public java.lang.String toString() {
@@ -73,9 +80,11 @@ public class Proveedor {
                 "id=" + id +
                 ", cif=" + cif +
                 ", nombre=" + nombre +
-                ", dirección=" + dirección +
+                ", dirección=" + direccion +
                 ", localidad=" + localidad +
                 ", provincia=" + provincia +
                 '}';
     }
+
+
 }
